@@ -6,7 +6,7 @@ function fetchDetails(){
         const posts=data;
         console.log(posts)
         for(const post of posts){
-            
+
             const mainContainer=document.getElementById("container");
 
             const headingDiv=document.createElement("h1");
@@ -15,7 +15,6 @@ function fetchDetails(){
             headingDiv.classList.add("headings");
             headingDiv.innerHTML=`${post.id}. ${post.title}`;
             paragraph.innerHTML=`${post.body}`;
-
             mainContainer.appendChild(headingDiv);
             mainContainer.appendChild(paragraph);
 
